@@ -1,0 +1,256 @@
+/* home page*/
+.navbar {
+    overflow: hidden;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+  .navbar{
+    position: fixed;
+    margin-bottom: 30px;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  body{
+    padding-bottom: 50px;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 5px;
+  }
+
+  
+.login{
+    width: 330px;
+    height: 350px;
+    margin: auto;
+    padding: 80px;
+  
+}
+.col-md-6{
+  margin-top: 10px;
+}
+
+/* about us page*/
+
+/* contact us page*/
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    }
+
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+
+    input[type=submit] {
+    background-color:peru;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: black;
+    }
+    .sidebar a:hover {
+        color: #f1f1f1;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+          }
+          
+          .fa:hover {
+              opacity: 0.7;
+          }
+          
+          .fa-facebook {
+            background: #3B5998;
+            color: white;
+          }
+          
+          .fa-twitter {
+            background: #55ACEE;
+            color: white;
+          }
+          
+          
+          .fa-linkedin {
+            background: #007bb5;
+            color: white;
+          }
+          
+          .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+          
+          .container {
+            position: relative;
+            text-align: center;
+            color: white;
+          }
+
+        /* login/reg */
+       /* * {
+            box-sizing: border-box;
+                }
+    
+                 input[type=text], select, textarea { 
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                }
+    
+                label {
+                padding: 10px 10px 10px 0;
+                display: inline-block;
+                }
+    
+                input[type=register] {
+                background-color: black;
+                margin: 10px;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                float: center;
+                text-align: center;
+                width: 150px;
+                }
+    
+                input[type=register]:hover {
+                background-color: gray;
+                }
+    
+                .container {
+                border-radius: 1px;
+                background-color: plum;
+                padding: 5px;
+                width: 700px;
+                height: 650px;
+                
+                }
+    
+                .name {
+                float: left;
+                width: 15%;
+                margin-top: 5px;
+    
+                }
+    
+                .name1 {
+                float: left;
+                width: 75%;
+                margin-top: 5px;
+                }
+    
+                .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                width: 20px;
+                }*/
+    
+
+
+
+        /* FAQs page */
+
+        /* Shop */
+        
+        div.gallery {
+            border: 1px solid #ccc;
+            padding-bottom: 50px;
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          
+          .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+          }
+          
+          @media only screen and (max-width: 700px) {
+            .responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+            }
+          }
+          
+          @media only screen and (max-width: 500px) {
+            .responsive {
+              width: 100%;
+            }
+          }
+          
+          .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+           /* footer */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding-bottom: 10px;
+ }

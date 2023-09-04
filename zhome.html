@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="mp3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+   /* background-image: url('/image/fbanner.png');  */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+      }
+      
+
+      /* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: peru;
+  color: black;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: peru;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: black;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.col-md-6{
+  margin-top: 10px;
+}
+img {
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.btn{
+  background-color: peru;
+}
+
+
+     
+      </style>
+</head>
+<body style="background-color: white;" >
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <div class="sticky-top">
+
+      <div class="navbar">
+        <img src="/image/2.png" alt="logo" width="50" height="50">
+        <a href="sample.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">Faq</a>
+        
+        <div class="d-flex" style="height: 50px;">
+          <div class="vr"></div>
+        </div>
+        <a href="facial.html">Facial Skin Care</a>
+        <a href="body.html">Body sKin Care</a>
+        <a href="cosme.html">Cosmetics</a>
+        <a href="men.html">Men Skin Care</a>
+      </div>
+  </div>
+      <button class="open-button" onclick="openForm()">LOGIN</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+     
+      <div class="main">
+        
+        <div class="row">
+
+          <div class="col-md-5" style="text-align:center; ">
+            <h3 style="color: black; font-family: aldhabi; font-weight: bolder;">QUEEN BEAUTY SHOP</h3>
+            <img src="/image/final.jpg" class="img-fluid" alt="placeholder-img" > 
+           </div>
+
+          <div class="col-md-7" style="text-align: center; ">
+            <h4 style="text-align: center; font-family: cursive;"> New Customer</h4>
+            <p style="text-align: center;"> By creating an account you will be able to shop faster,<br>
+             be up to date on an order's status, <br>
+             and keep track of the orders you have previously made.</p>
+           <a class="btn btn-warning" href="page.html" role="button">REGISTER <br></a>
+           
+           <h5 style="text-align: center; font-family: cursive;">QUEEN BEAUTY  SHOP</h5>
+          <p style="text-align: center;">We help solve common Filipino skin care and facial care problems<br>
+           with the various beauty products and brands that we provide. </p>
+           <a class="btn btn-warning" href="shops.html" role="button">Shop Now!</a><br>
+         </div>
+        
+        </div>
+      </div>
+        
+
+          
+      <!-- <div class="footer"> 
+        <p style="color: aliceblue;">Less 30% on your first order
+          <a href="shops.html">Shop Now!!!</a></p>
+       
+      </div>-->
+
+</body>
+</html>

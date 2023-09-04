@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="mp3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        * {
+        box-sizing: border-box;
+            }
+
+            input[type=text], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            }
+            input[type=Password], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            }
+
+
+            label {
+            padding: 10px 10px 10px 0;
+            display: inline-block;
+            }
+
+            input[type=register] {
+            background-color: peru;
+            margin: 10px;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            float: center;
+            text-align: center;
+            width: 150px;
+            
+            }
+
+            input[type=register]:hover {
+            background-color: gray;
+            }
+
+            .container {
+            border-radius: 1px;
+            background-color: burlywood;
+            padding: 5px;
+            width: 700px;
+            height: 800px;
+            
+            }
+            
+            
+            .name {
+            float: left;
+            width: 15%;
+            margin-top: 5px;
+
+            }
+
+            .name1 {
+            float: left;
+            width: 75%;
+            margin-top: 5px;
+            }
+            
+
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            width: 10px;
+            }
+            input[type=button] {
+              background-color: peru;
+              color: black;
+            
+            }
+            @media only screen and (max-width: 700px) {
+            .responsive {
+              width: 49.99999%;
+              margin: 6px ;
+            }
+          }
+          
+          @media only screen and (max-width: 500px) {
+            .responsive {
+              width: 100%;
+            }
+          }
+ 
+            
+</style>
+</head>
+<body style="background-color: burlywood;">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <div class="sticky-top">
+    <div class="navbar">
+        <img src="/image/2.png" alt="logo" width="50" height="50">
+        <a href="sample.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        
+        <div class="d-flex" style="height: 50px;">
+          <div class="vr"></div>
+        </div>
+        <a href="facial.html">Facial Skin Care</a>
+        <a href="body.html">Body sKin Care</a>
+        <a href="cosme.html">Cosmetics</a>
+        <a href="men.html">Men Skin Care</a>
+      </div>
+    </div>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center; height: 630px;">
+                <div class="container">
+                    <h2 style="text-align: center; color: black;">Registration Form</h2>
+                    <br>
+                <div class="row">
+                        <div class="name">
+                          <label for="fname">Full Name</label>
+                        </div>
+                        <div class="name1">
+                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>   
+                        <div class="name">
+                          <label for="adress">Address</label>
+                        </div>
+                        <div class="name1">
+                          <input type="text" id="adress" name="firstadress" placeholder="Your address..">
+                        </div>
+                        <div class="name">
+                          <label for="gender">Gender</label>
+                        </div>
+                        <div class="name1">
+                              <label for="male">Male</label>
+                              <input type="radio" name="gender" id="male" value="male" checked>
+                              <label for="female">Female</label>
+                              <input type="radio" name="gender" id="female" value="female">
+                            </fieldset>
+                        </div>
+                          <div class="name">
+                            <label for="contact">Cellphone no.</label>
+                          </div>
+                          <div class="name1">
+                            <input type="text" id="contact" name="firstcontact" placeholder="Your contact number..">
+                          </div>
+                          <div class="name">
+                            <label for="emailadd">Email Adress</label>
+                          </div>
+                          <div class="name1">
+                            <input type="text" id="emailadd" name="firstemailadd" placeholder="Your email adress..">
+                          </div>
+                          <div class="name">
+                            <label for="bday">Birth Date</label>
+                          </div>
+                          <div class="name1">
+                              <input type="date" id="birthday" name="birthday">
+                              <input type="submit">
+                          </div>
+                        <div class="name">
+                          <label for="country">Country</label>
+                        </div>
+                        <div class="name1">
+                          <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="australia">Philippines</option>
+                          </select>
+                        </div>
+
+                        <div class="name">
+                          <label for="pass">Password</label>
+                        </div>
+                        <div class="name1">
+                          <input type="text" id="pass" name="password" placeholder="Your password..">
+                        </div>   
+                        <div class="name">
+                          <label for="confirmpass">Confirm Password</label>
+                        </div>
+                        <div class="name1">
+                          <input type="text" id="confirmpass" name="confirmpassword" placeholder="Confirm your password..">
+                        </div>
+                      </div>
+               
+                    <input type="register" value="Register">
+                  </form>
+                </div>     
+      
+
+      <!-- <div class="footer"> 
+        <p>If you already have an account with us, please login at the 
+        <a href="sample.html">Login Page.</a></p>
+      </div>-->
+    </body>
+    </html>
